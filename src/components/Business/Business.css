@@ -9,6 +9,7 @@
 .Business .image-container {
   height: 16.66rem;
   margin-bottom: 1rem;
+  overflow: hidden;
 }
 
 .Business h2 {
