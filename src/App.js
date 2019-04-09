@@ -6,7 +6,8 @@ import SearchBar from './components/SearchBar/SearchBar';
 class App extends Component {
   render() {
     return (
-        <div>
+        <div className='App'>
+        <h1>Ravenous Food House</h1>
           <SearchBar />
           <BusinessList />
         </div>
