@@ -21,7 +21,7 @@ As a user, I should be able to sort through restaurants using a filter
 
 ### Approach
 This project was split into components then broken down into the following parts:   
-- Created Static Components (<Business />, <BusinessList />, <SearchBar /> and React main <App /> )
+- Created Static Components (`<Business />`, `<BusinessList />`, `<SearchBar />` and React main `<App />`)
 - Passed Information to Components
 - Set the State of Ravenous Components
 - Interact with the Yelp API
