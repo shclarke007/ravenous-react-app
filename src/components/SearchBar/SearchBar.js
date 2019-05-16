@@ -8,10 +8,31 @@ const sortByOptions = {
 };
 
 class SearchBar extends Component {
+  constructor(props){
+    super(props)
+    this.state = { 
+      term: '', 
+      location: '', 
+      sortBy: 'best_match' 
+    }; 
+    this.handleSortByChange = this.handleSortByChange.bind(this);           
+  }
+
+  getSortByClass(sortByOption) {
+    if(sortByOption === this.state.sortBy){
+      return 'active'
+    }
+    return ''; 
+  }
+
+  handleSortByChange(sortByOption){
+    this.setState({sortBy: sortByOption});
+  }
+
   renderSortByOptions() {
     return Object.keys(sortByOptions).map(sortByOption => {
       let sortByOptionValue = sortByOptions[sortByOption];
-      return <li key={sortByOptionValue}>{sortByOption}</li>;
+      return <li key={sortByOptionValue} onClick={this.handleSortByChange.bind(this, sortByOptionValue)} className={this.getSortByClass(sortByOptionValue)}>{sortByOption}</li>;
     });
   }
 
