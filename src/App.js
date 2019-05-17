@@ -18,11 +18,14 @@ const business = {
 const businesses = [business, business, business, business, business, business];
 
 class App extends Component {
+  searchZomato(term, location, sortBy){
+    console.log(`You are searching for ${term}, ${location}, ${sortBy}`);
+  }
   render() {
     return (
         <div className='App'>
         <h1>Ravenous Food House</h1>
-          <SearchBar />
+          <SearchBar searchZomato={this.searchZomato}/>
           <BusinessList businesses={businesses}/>
         </div>
     );
