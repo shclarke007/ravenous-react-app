@@ -1,5 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
@@ -15,8 +13,8 @@ You will also see any lint errors in the console.
 ### User Stories
 ```
 As a user, I should be able to search for restaurants
-As a user, I should be able to view a list of restaurants returned by the Yelp API
-As a user, I should be able to sort through restaurants using a filter
+As a user, I should be able to view a list of restaurants returned by the Zomato API
+As a user, I should be able to sort through restaurants using a filter for bext match, highest rated and most reviewed.
 ```
 
 ### Approach
@@ -24,4 +22,6 @@ This project was split into components then broken down into the following parts
 - Created Static Components (`<Business />`, `<BusinessList />`, `<SearchBar />` and React main `<App />`)
 - Passed Information to Components
 - Set the State of Ravenous Components
-- Interact with the Yelp API
+- Interact with the Zomato API
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
