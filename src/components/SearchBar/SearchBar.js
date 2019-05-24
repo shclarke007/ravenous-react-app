@@ -29,7 +29,7 @@ class SearchBar extends Component {
   }
 
   handleSearch(event){
-    this.props.searchZomato(this.state.term, this.state.location, this.state.sortBy);
+    this.props.searchYelp(this.state.term, this.state.location, this.state.sortBy);
     event.preventDefault();
   }
 
